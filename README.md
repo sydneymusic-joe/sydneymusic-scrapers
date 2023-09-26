@@ -1,6 +1,9 @@
 # sydneymusic-scrapers
 
-Simple tools used to scrape gigs from ticketing and venue websites. Includes a list of the links we manually source gigs from as well.
+Simple tools used to scrape gigs from ticketing and venue websites.
+
+You can see a complete list of the links we manually source gigs from here:
+https://docs.google.com/spreadsheets/d/1ohlqlV54iYOMuTmLqh5gMT0PycXWLxPId9bwiYBR9Qs/edit#gid=0
 
 
 ## sydneymusic-moshtix and sydneymusic-century scrapers
