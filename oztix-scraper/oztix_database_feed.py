@@ -40,8 +40,7 @@ except:
 pd.set_option('display.max_columns', None)
 
 # setting up our webdriver 
-html = 'file:///Users/joehardy/Sites/sydneymusic-oztix/sydney_music-algolia_template-utm_and_hc_filtering.html'
-# html = 'file:///C:/Users/thoma/Documents/GitHub/sydneymusic/oztix_feed/sydneymusic-oztix/sydney_music-algolia_template-utm_and_hc_filtering.html'
+html = 'file:///Users/joehardy/Sites/sydneymusic-scrapers/oztix-scraper/sydney_music-algolia_template-utm_and_hc_filtering.html'
 driver = webdriver.Firefox(executable_path=r"./geckodriver")
 browser =  driver.get(html)
 results = []
