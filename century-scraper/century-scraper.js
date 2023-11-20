@@ -41,6 +41,9 @@ async function searchAndExport() {
       let $$ = cheerio.load(gigResponse.data);
       let dates = $$('.sessions.show-for-small-only .session-date');
       for (let idx = 0; idx<dates.length;idx++) {
+        if ($$('.category.inline-list li:contains(Comedy)').length > 0) {
+          continue;
+        }
         let result = {};
         result['Date'] = $$(dates[idx]).text();
         result['Venue'] = $$('aside h5.session-title:eq(0)').text();
