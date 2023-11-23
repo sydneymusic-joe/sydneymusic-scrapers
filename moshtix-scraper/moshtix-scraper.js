@@ -22,6 +22,7 @@ const searchUrls =
   '6422',
   '7278',
   '9407',
+  '9445',
 ];
 
 async function searchAndExport() {
