@@ -7,7 +7,7 @@ async function searchAndExport() {
 
 	let response = await axios.post(
 		"https://fa8p3nc719-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(4.8.2)%3B%20Browser%3B%20instantsearch.js%20(4.8.7)%3B%20JS%20Helper%20(3.3.2)",
-		'{"requests":[{"indexName":"wpprod_searchable_posts","params":"hitsPerPage=50&facetFilters=%5B%22post_type%3Aevent%22%5D&filters=timestamp%20%3E%201702179354&query=&maxValuesPerFacet=10&highlightPreTag=__ais-highlight__&highlightPostTag=__%2Fais-highlight__&facets=%5B%22taxonomies.eventcategory%22%5D&tagFilters="}]}',
+		'{"requests":[{"indexName":"wpprod_searchable_posts","params":"hitsPerPage=50&facetFilters=%5B%22post_type%3Aevent%22%5D&filters=timestamp%20%3E%20' + (Date.now()/1000) + '&query=&maxValuesPerFacet=10&highlightPreTag=__ais-highlight__&highlightPostTag=__%2Fais-highlight__&facets=%5B%22taxonomies.eventcategory%22%5D&tagFilters="}]}',
 		{
 		"headers": {
 			"accept": "*/*",
