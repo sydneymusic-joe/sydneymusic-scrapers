@@ -55,7 +55,7 @@ async function searchAndExport() {
       }
     }
   }
-  csv.toDisk('./search_results.csv', { append: false });
+  csv.toDisk('./scrape-century.csv', { append: false });
 }
 
 // Example usage:

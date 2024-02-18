@@ -43,7 +43,7 @@ async function searchAndExport() {
 
 	// Export the results to a CSV file
 	const csv = new ObjectsToCsv(results);
-	await csv.toDisk('./search_results.csv', { append: false });
+	await csv.toDisk('./scrape-hordern.csv', { append: false });
 }
 
 searchAndExport().then(() => {
