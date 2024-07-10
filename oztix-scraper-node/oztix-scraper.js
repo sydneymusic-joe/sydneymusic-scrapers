@@ -59,7 +59,8 @@ const venues =
 	"Ettamogah Hotel",
 	"Lansdowne Hotel",
 	"New Brighton Hotel",
-	"Red Rattler Theatre"
+	"Red Rattler Theatre",
+	"Darling Nikki's"
 ];
 
 async function searchAndExport() {
