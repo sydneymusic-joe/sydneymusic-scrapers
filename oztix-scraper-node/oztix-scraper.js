@@ -108,7 +108,7 @@ async function searchAndExport() {
 			data.hits.forEach((element, i) => {
 				let src = element;
 				let result = {};
-				result['Date'] = src['DateStart'] + "+00:00";
+				result['Date'] = src['DateStart'];
 				result['Venue'] = venues[venue];
 				result['Performers'] = src['EventName'] + ' + ' + src['SpecialGuests'];
 				result['URL'] = src['EventUrl'].replace('utm_medium=Website', 'utm_medium=EventFeed').replace('utm_source=Oztix', 'utm_source=SydneyMusic');
